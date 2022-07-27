@@ -1,0 +1,13 @@
+<div>
+<%= form_with model:[@circle,@apply] ,local: true do |form| %>
+  <div>
+  <%= form.text_field :name,class: 'form' , :autocomplete => "off",:class => "feedback-input" , :placeholder => "お名前"  %>
+  </div>
+  <div>
+  <%= form.text_area :appeal,class: 'form' , :autocomplete => "off",:class => "feedback-input" ,:placeholder => "アピールポイント" %>
+ </div>
+<div>
+  <%= form.submit '参加申請する',data: { confirm: '参加申請しますか？' },class: 'submit' %>
+</div>
+<% end %>
+</div>
