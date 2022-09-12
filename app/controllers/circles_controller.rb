@@ -4,6 +4,7 @@ class CirclesController < ApplicationController
   # GET /circles or /circles.json
   def index
     @circles = Circle.all
+    
   end
 
   # GET /circles/1 or /circles/1.json

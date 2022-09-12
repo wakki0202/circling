@@ -22,6 +22,7 @@ class AppliesController < ApplicationController
   
       
       if  @apply.save
+          ApplyMailer.complete_apply(@apply,@current_user).deliver
           redirect_to circles_path
       else
           render :new  #同上

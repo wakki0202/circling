@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   end
   get "circles/:id/applies/new", to:"applies#new"
   post "circles/:id/applies", to:"applies#create"
+
+  resources :events
+  get "events/:id/pay" => "events#pay"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

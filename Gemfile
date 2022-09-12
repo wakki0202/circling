@@ -78,3 +78,5 @@ gem 'devise'
 group :development, :test do
   gem 'rails-erd'
 end
+
+gem 'payjp'

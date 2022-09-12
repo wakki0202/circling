@@ -4,20 +4,49 @@
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
 
-    <%= render @circle %>
+    
 
-    <% @circle_blogs.each do |circle_blog|%>
-    <div>
-      <%= circle_blog.content %>
-    </div>
-    <% end %>
 
-    <%= link_to '＜ サークル一覧', circles_path, class: " rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <p class="mt-5 mb-2">
+    <span class="rounded-xl px-2 text-sm border border-black">スポーツ</span>
+  </p>
 
-    <%= link_to "ブログ一覧" ,"/circles/#{@circle.id}/circle_blogs",class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <p class="mt-2 mb-5 font-bold text-xl">
+    <%= @circle.content %>
+  </p>
 
-    <%= link_to "参加申請する" ,"/circles/#{@circle.id}/applies/new",class: " rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <p class="mt-5">
+    <strong class="block font-medium mb-1"></strong>
+    <%= @circle.name %>
+  </p>
 
+
+  <div class="h-80 border border-black mt-1">
+  </div>
+  <div class="my-4 ">
+  <p class="font-bold">■概要</p>
+    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+
+  <div class="my-4 ">
+  <p class="font-bold">■こんなことします</p>
+    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+
+  <div class="my-4 ">
+  <p class="font-bold">■募集要項</p>
+    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+
+<div class="my-4 ">
+  <p class="font-bold">■その他</p>
+    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div>
+  
+ 
+<div class="text-center">
+    <%= link_to "参加申請する" ,"/circles/#{@circle.id}/applies/new",class: " rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium " %>
+</div>
     
   </div>
 </div>

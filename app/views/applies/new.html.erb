@@ -1,13 +1,16 @@
-<div>
+<div class="w-10/12 m-auto ">
+<div class="w-2/6 m-auto">
+<h1 class="font-bold text-lg">参加申請フォーム</h1>
 <%= form_with model:[@circle,@apply] ,local: true do |form| %>
-  <div>
-  <%= form.text_field :name,class: 'form' , :autocomplete => "off",:class => "feedback-input" , :placeholder => "お名前"  %>
+  <div class="mb-3 rounded-xl">
+  <%= form.text_field :name,class: 'form' , :autocomplete => "off",:class => "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" , :placeholder => "お名前"  %>
   </div>
-  <div>
-  <%= form.text_area :appeal,class: 'form' , :autocomplete => "off",:class => "feedback-input" ,:placeholder => "アピールポイント" %>
+  <div class="mb-3">
+  <%= form.text_area :appeal,class: 'form' , :autocomplete => "off",:class => "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" ,:placeholder => "アピールポイント" %>
  </div>
-<div>
-  <%= form.submit '参加申請する',data: { confirm: '参加申請しますか？' },class: 'submit' %>
+<div class="">
+  <%= form.submit '参加申請する',data: { confirm: '参加申請しますか？' },class: 'rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer' %>
 </div>
 <% end %>
+</div>
 </div>

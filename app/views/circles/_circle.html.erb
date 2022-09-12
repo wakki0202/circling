@@ -1,17 +1,27 @@
-<div id="<%= dom_id circle %>">
+
+  
+    <a href="circles/<%= circle.id %>" >
+    <hr class="mt-6">
+  <div class="h-80 border border-black mt-3">
+  </div>
+
+
+  <p class="my-2">
+    <span class="rounded-xl px-2 text-sm border border-black">スポーツ</span>
+  </p>
+
+  <p class="my-2 font-bold text-xl hover:text-blue-500 duration-300">
+    <%= circle.content %>
+  </p>
+  <p class="my-2 ">
+    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+  </p>
+
   <p class="my-5">
     <strong class="block font-medium mb-1"></strong>
     <%= circle.name %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">こんなことやってます</strong>
-    <%= circle.content %>
-  </p>
-
-
-  <% if action_name != "show" %>
-    <%= link_to "詳細はこちら", circle, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
-</div>
+  
+    
+  </a>
